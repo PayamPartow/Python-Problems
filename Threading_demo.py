@@ -25,7 +25,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 #     threads.append(t)
 
 # for thread in threads:
-# thread.join() #using the join method so that each thread finished execution before continuing with the rest of the script
+#     thread.join()
 
 finish = time.perf_counter()
 
