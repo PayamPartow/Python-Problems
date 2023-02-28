@@ -23,7 +23,7 @@ img_names = [
     'photo-1549692520-acc6669e2f0c.jpg'
 ]
 
-t1 = time.perf_counter()
+t1 = time.perf_counter()  # counter to measure how long our script takes
 
 size = (1200, 1200)
 
@@ -40,7 +40,6 @@ def process_image(img_name):
 def main():
     with concurrent.futures.ProcessPoolExecutor() as executor:
         executor.map(process_image, img_names)
-
 
 t2 = time.perf_counter()
 
